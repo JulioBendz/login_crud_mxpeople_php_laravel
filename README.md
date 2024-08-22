@@ -72,4 +72,4 @@ Puedes acceder a la aplicación en http://localhost:8000
 
 
 
-Este README proporciona una guía clara y completa para la instalación y configuración del proyecto. Puedes ajustarlo según lo necesites. ¡Buena suerte con tu proyecto!
+Este README proporciona una guía clara y completa para la instalación y configuración del proyecto. Puedes ajustarlo según lo necesites. ¡Buena suerte con tus proyectos!
