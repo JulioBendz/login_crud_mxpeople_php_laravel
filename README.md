@@ -7,60 +7,69 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+## Acerca de Este Proyecto
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Este proyecto es una implementación técnica creada para mostrar habilidades en el uso de **PHP** y **Laravel**. El objetivo principal es demostrar la capacidad de crear un sistema básico de autenticación y gestión de datos con las siguientes características:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- **Sistema de Login**: Permite a los usuarios registrarse y autenticar sus credenciales.
+- **CRUD de Productos**: Ofrece funcionalidades para:
+  - **Crear**: Agregar nuevos productos.
+  - **Leer**: Visualizar la lista de productos existentes.
+  - **Actualizar**: Editar detalles de productos.
+  - **Eliminar**: Eliminar productos de la base de datos.
+  
+El sistema está conectado a una base de datos MySQL, y el proyecto puede servir como base para desarrollar aplicaciones reales, como sistemas de gestión para el registro de personas o sistemas de partes.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Tecnologías Utilizadas
 
-## Learning Laravel
+- **PHP**: Lenguaje de programación en el backend.
+- **Laravel**: Framework PHP para el desarrollo del proyecto.
+- **MySQL**: Base de datos relacional utilizada para el almacenamiento de datos.
+- **Composer**: Herramienta de gestión de dependencias para PHP.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Instalación y Configuración
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+1. **Clona el repositorio:**
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+   ```bash
+   git clone https://github.com/JulioBendz/login_crud_mxpeople_php_laravel.git
 
-## Laravel Sponsors
+2. **Navega al directorio del proyecto:**
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+   ```bash
+   cd login_crud_mxpeople_php_laravel
 
-### Premium Partners
+3. **Instala las dependencias del proyecto:**
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+   ```bash
+   composer install
 
-## Contributing
+4. **Configura el archivo .env:**
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+    Copia el archivo de ejemplo y renómbralo:
 
-## Code of Conduct
+   ```bash
+   cp .env.example .env
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+   Luego, abre el archivo .env y configura los detalles de conexión a la base de datos y otras variables de entorno según tu entorno local.
 
-## Security Vulnerabilities
+5. **Genera la clave de aplicación de Laravel:**
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+   ```bash
+   php artisan key:generate
 
-## License
+6. **Ejecuta las migraciones para crear las tablas en la base de datos:**
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+   ```bash
+   php artisan migrate
+
+7. **Inicia el servidor de desarrollo:**
+
+   ```bash
+   php artisan serve
+
+Puedes acceder a la aplicación en http://localhost:8000
+
+
+
+Este README proporciona una guía clara y completa para la instalación y configuración del proyecto. Puedes ajustarlo según lo necesites. ¡Buena suerte con tu proyecto!
